@@ -10,7 +10,7 @@ SwiperCore.use([Navigation, A11y, Keyboard]);
 const SlideshowStyles = styled.div`
   .swiper-button-prev,
   .swiper-button-next {
-    color: var(--white);
+    color: white;
   }
 `;
 

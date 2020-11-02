@@ -7,6 +7,8 @@ import { formatTimeInterval } from "../utils/formatDate";
 
 const ServiceStyles = styled(Link)`
   background: ${({ color }) =>
+    color === "blue" ? "rgb(115, 155, 206)" : "rgb(103, 137, 140)"};
+  background: ${({ color }) =>
     color === "blue" ? "var(--blue)" : "var(--green)"};
   color: white;
   text-decoration: none;
@@ -79,7 +81,11 @@ const ServicesStyles = styled.div`
 
   .title {
     color: ${({ color }) =>
+      color === "blue" ? "rgb(115, 155, 206)" : "rgb(103, 137, 140)"};
+    color: ${({ color }) =>
       color === "blue" ? "var(--blue)" : "var(--green)"};
+    background: ${({ color }) =>
+      color === "blue" ? "rgb(115, 155, 206)" : "rgb(103, 137, 140)"};
     border-bottom-color: ${({ color }) =>
       color === "blue" ? "var(--blue)" : "var(--green)"};
     border-bottom-style: solid;
