@@ -3,11 +3,10 @@ import React from "react";
 import styled from "styled-components";
 
 const Styles = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  max-width: 750px;
+  margin: 2rem auto;
+  max-width: 750px;
+  margin: 2rem auto;
   a {
     text-decoration: none;
     color: black;

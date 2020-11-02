@@ -1,7 +1,7 @@
 {
-  "name": "helsingør-front-end",
+  "name": "helsingor-front-end",
   "private": true,
-  "description": "Front-end Helsingør Domkirke webpage",
+  "description": "Front-end Helsingor Domkirke webpage",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {

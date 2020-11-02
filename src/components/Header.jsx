@@ -14,9 +14,12 @@ const StyledMenu = styled.nav`
     text-transform: uppercase;
   }
   ul {
-    display: flex;
-    justify-content: flex-end;
-    gap: 2rem;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-items: end;
+    width: fit-content;
+    grid-column-gap: 2rem;
+    margin: 0 0 0 auto;
   }
   .brand {
     z-index: 12;
@@ -28,20 +31,23 @@ const StyledMenu = styled.nav`
   @media (max-width: 1280px) {
     ul {
       z-index: 10;
-      margin: 0;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: start;
       background-color: var(--gold);
       transform: ${({ open }) =>
         open ? "translateX(0)" : "translateX(-100%)"};
       text-align: left;
-      padding: 2rem;
+      padding-top: 12rem;
       position: absolute;
       top: 0;
       left: 0;
       bottom: 0;
       transition: transform 0.3s ease-in-out;
+
+      a {
+        padding: 2rem 0;
+      }
 
       @media (max-width: 576px) {
         width: 100%;

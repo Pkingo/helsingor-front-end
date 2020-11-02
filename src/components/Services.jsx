@@ -15,6 +15,7 @@ const ServiceStyles = styled(Link)`
   grid-template-rows: auto auto;
   grid-column-gap: 2rem;
   align-items: center;
+  margin: 1rem 0;
 
   &:hover {
     filter: brightness(0.8);
@@ -50,7 +51,6 @@ const ServiceStyles = styled(Link)`
   }
   .detail {
     display: flex;
-    gap: 0.5rem;
     font-size: 1.2rem;
   }
   svg {
@@ -75,7 +75,6 @@ const ServiceStyles = styled(Link)`
 const ServicesStyles = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 2rem;
   padding: 2rem 0;
 
   .title {
