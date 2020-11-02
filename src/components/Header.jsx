@@ -6,11 +6,10 @@ const StyledMenu = styled.nav`
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
-  background-color: rgb(174, 126, 75);
   background-color: var(--gold);
   padding: 2rem;
   a {
-    color: white
+    color: var(--white);
     text-decoration: none;
     text-transform: uppercase;
   }
@@ -25,7 +24,7 @@ const StyledMenu = styled.nav`
   .brand {
     z-index: 12;
     h2 {
-      color: white;
+      color: var(--white);
       font-weight: normal;
     }
   }
@@ -35,7 +34,6 @@ const StyledMenu = styled.nav`
       display: flex;
       flex-direction: column;
       justify-content: start;
-      background-color: rgb(174, 126, 75);
       background-color: var(--gold);
       transform: ${({ open }) =>
         open ? "translateX(0)" : "translateX(-100%)"};
@@ -112,7 +110,7 @@ const StyledBurger = styled.button`
     div {
       width: 2rem;
       height: 0.25rem;
-      background-color: white;
+      background-color: var(--white);
       border-radius: 10px;
       transition: all 0.3s linear;
       position: relative;

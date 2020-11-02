@@ -8,12 +8,11 @@ const FooterStyles = styled.footer`
   justify-content: center;
   width: 100%;
   padding: 2rem 0;
-  background-color: rgb(174, 126, 75);
   background-color: var(--gold);
 
   a {
-    color: white
-    border: 2px solid white
+    color: var(--white);
+    border: 2px solid var(--white);
     padding: 0.5rem;
     text-decoration: none;
   }

@@ -7,7 +7,7 @@ const GlobalStyles = createGlobalStyle`
     --blue: rgb(115, 155, 206);
     --pink: rgb(173, 123, 151);
     --green: rgb(103, 137, 140);
-
+    --white: white;
   }
   html {
     font-size: 10px;
@@ -42,16 +42,15 @@ const GlobalStyles = createGlobalStyle`
   }
   html {
     scrollbar-width: thin;
-    scrollbar-color: rgb(177, 89, 75) white;
-    scrollbar-color: var(--red) white;
+    scrollbar-color: var(--red) var(--white);
   }
   body::-webkit-scrollbar-track {
-    background: white
+    background: var(--white);
   }
   body::-webkit-scrollbar-thumb {
     background-color: rgb(177, 89, 75);
     border-radius: 6px;
-    border: 3px solid white
+    border: 3px solid var(--white);
   }
 
   img {

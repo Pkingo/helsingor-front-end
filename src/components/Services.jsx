@@ -7,10 +7,8 @@ import { formatTimeInterval } from "../utils/formatDate";
 
 const ServiceStyles = styled(Link)`
   background: ${({ color }) =>
-    color === "blue" ? "rgb(115, 155, 206)" : "rgb(103, 137, 140)"};
-  background: ${({ color }) =>
     color === "blue" ? "var(--blue)" : "var(--green)"};
-  color: white;
+  color: var(--white);
   text-decoration: none;
   display: grid;
   grid-template-columns: auto auto 1fr 1fr 20px;
@@ -27,7 +25,7 @@ const ServiceStyles = styled(Link)`
     grid-row: span 2;
     font-size: 3rem;
     border-right-width: 2px;
-    border-right-color: white;
+    border-right-color: var(--white);
     border-right-style: solid;
     padding: 0.5rem 2rem;
     margin: 0.5rem 0;
@@ -42,7 +40,7 @@ const ServiceStyles = styled(Link)`
     list-style: none;
   }
   h2 {
-    color: white;
+    color: var(--white);
     grid-column: span 2;
     display: flex;
     align-items: center;
@@ -81,11 +79,7 @@ const ServicesStyles = styled.div`
 
   .title {
     color: ${({ color }) =>
-      color === "blue" ? "rgb(115, 155, 206)" : "rgb(103, 137, 140)"};
-    color: ${({ color }) =>
       color === "blue" ? "var(--blue)" : "var(--green)"};
-    background: ${({ color }) =>
-      color === "blue" ? "rgb(115, 155, 206)" : "rgb(103, 137, 140)"};
     border-bottom-color: ${({ color }) =>
       color === "blue" ? "var(--blue)" : "var(--green)"};
     border-bottom-style: solid;
